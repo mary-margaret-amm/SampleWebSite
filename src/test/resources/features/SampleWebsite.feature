@@ -1,5 +1,5 @@
 @smoke
-Feature: Web_SampleWebsite_Register_Form_Scenario
+Feature: Web_SampleWebsite_Register_Form
 
 Scenario Outline:
 Given Launch the url "https://mary-margaret-amm.github.io/SampleWebSite/"
