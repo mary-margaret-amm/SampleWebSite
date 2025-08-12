@@ -31,9 +31,10 @@ public class BaseClass {
 
     public void browserLaunch() {
         // ✅ Use headless mode in Jenkins
+
         ChromeOptions options = new ChromeOptions();
         if (isHeadlessEnv()) {
-            options.addArguments("--headless=new");
+            options.addArguments("--headless=new", "--window-size=1920,1080");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
         }
