@@ -2,7 +2,7 @@
 Feature: Web_SampleWebsite_Register_Form_Scenario
 
 Scenario Outline:
-Given Launch the url "file:///C:/Users/malbert/Desktop/htmlFolder/index.html"
+Given Launch the url "file:///C:/Users/malbert/Desktop/SampleWebsiteFolder/SampleWebSite/index.html"
 When Enter the name "<name>"
 And Enter the email "<email>"
 And Enter the password "<password>"

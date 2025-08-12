@@ -18,7 +18,6 @@ public class SampleWebsite extends BaseClass {
         Thread.sleep(500);
         driver.get(url);
         Thread.sleep(500);
-
     }
 
     @When("Enter the name {string}")
@@ -42,7 +41,6 @@ public class SampleWebsite extends BaseClass {
         WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
         password.sendKeys(password1);
         Thread.sleep(500);
-
     }
 
     @Then("click the Register button")

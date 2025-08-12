@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
                 "junit:target/junit-results.xml",
                 "json:target/cucumber.json"
         }, monochrome = true,
-        // tags = "@smoke_API",
+        // tags = "@smoke",
         dryRun = false)
 public class TestRunner {
 }
