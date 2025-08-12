@@ -12,7 +12,7 @@ public class MySampleApp extends BaseClass {
 
 @Given("user launch sample app page")
 public void user_launch_sample_app_page() {
-driver.get("file:///C:/Users/djaishankar/Documents/Simple%20Form%20Website/SampleForms.html");
+driver.get("https://dhilip19031991.github.io/NewHtmlSite/");
 }
 
 @Then("enter first name {string} and last name {string}")
