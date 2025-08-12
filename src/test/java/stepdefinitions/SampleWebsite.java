@@ -1,8 +1,12 @@
 package stepdefinitions;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import common.BaseClass;
 import io.cucumber.java.en.Given;
@@ -23,9 +27,12 @@ public class SampleWebsite extends BaseClass {
     @When("Enter the name {string}")
     public void enter_the_name(String name1) throws InterruptedException {
 
-        Thread.sleep(2000);
-        WebElement name = driver.findElement(By.xpath("//input[@id='name']"));
-        name.sendKeys(name1);
+        // Thread.sleep(2000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='name']"))).sendKeys(name1);
+
+        // WebElement name = driver.findElement(By.xpath("//input[@id='name']"));
+        // name.sendKeys(name1);
         Thread.sleep(500);
 
     }
