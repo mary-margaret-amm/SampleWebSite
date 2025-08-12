@@ -34,7 +34,7 @@ public class BaseClass {
 
         ChromeOptions options = new ChromeOptions();
         if (isHeadlessEnv()) {
-            options.addArguments("--headless=new", "--window-size=1920,1080");
+            options.addArguments("--headless=new");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
         }
