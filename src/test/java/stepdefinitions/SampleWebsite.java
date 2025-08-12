@@ -28,7 +28,7 @@ public class SampleWebsite extends BaseClass {
     public void enter_the_name(String name1) throws InterruptedException {
 
         // Thread.sleep(2000);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='name']"))).sendKeys(name1);
 
         // WebElement name = driver.findElement(By.xpath("//input[@id='name']"));
