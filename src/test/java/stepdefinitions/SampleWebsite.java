@@ -22,6 +22,8 @@ public class SampleWebsite extends BaseClass {
 
     @When("Enter the name {string}")
     public void enter_the_name(String name1) throws InterruptedException {
+
+        Thread.sleep(2000);
         WebElement name = driver.findElement(By.xpath("//input[@id='name']"));
         name.sendKeys(name1);
         Thread.sleep(500);
@@ -45,18 +47,22 @@ public class SampleWebsite extends BaseClass {
 
     @Then("click the Register button")
     public void click_the_register_button() throws InterruptedException {
-        WebElement register = driver.findElement(By.xpath("//button[@type='submit'][text()='Register']"));
-        register.click();
-        Thread.sleep(500);
+        explicitWaitClick("//button[@type='submit'][text()='Register']");
+        // WebElement register =
+        // driver.findElement(By.xpath("//button[@type='submit'][text()='Register']"));
+        // register.click();
+        // Thread.sleep(500);
         System.out.println("Register button cliked");
 
     }
 
     @Then("click the forgot passord link")
     public void click_the_forgot_passord_link() throws InterruptedException {
-        WebElement forgotPass = driver.findElement(By.xpath("//a[text()='Forgot Password?']"));
-        forgotPass.click();
-        Thread.sleep(500);
+        explicitWaitClick("//a[text()='Forgot Password?']");
+        // WebElement forgotPass = driver.findElement(By.xpath("//a[text()='Forgot
+        // Password?']"));
+        // forgotPass.click();
+        // Thread.sleep(500);
         System.out.println("Forgot password link clicked.");
 
     }
