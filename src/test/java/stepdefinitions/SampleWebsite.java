@@ -60,6 +60,9 @@ public class SampleWebsite extends BaseClass {
         // register.click();
         // Thread.sleep(500);
         System.out.println("Register button cliked");
+        System.out.println(driver.switchTo().alert().getText() + " - ALERT TEXT");
+
+        driver.switchTo().alert().accept();
 
     }
 
@@ -71,6 +74,7 @@ public class SampleWebsite extends BaseClass {
         // forgotPass.click();
         // Thread.sleep(500);
         System.out.println("Forgot password link clicked.");
+        driver.quit();
 
     }
 

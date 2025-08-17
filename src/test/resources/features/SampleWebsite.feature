@@ -12,4 +12,6 @@ And click the forgot passord link
 Examples:
 |name|email|password|
 |Mary|a.b@gmail.com|1234|
-|Muthu|c.d@gmail.com|3456|
+||c.d@gmail.com|3456|
+
+
